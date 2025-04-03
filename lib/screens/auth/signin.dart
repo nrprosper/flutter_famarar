@@ -1,4 +1,5 @@
 import 'package:famarar/components/form_separator.dart';
+import 'package:famarar/screens/auth/components/authTitle.dart';
 import 'package:famarar/screens/auth/forgotPassword.dart';
 import 'package:famarar/screens/auth/signup.dart';
 import 'package:famarar/utils/colors.dart';
@@ -27,26 +28,7 @@ class _SigninState extends State<Signin> {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 24.0,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    DTexts.welcome,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 20,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 64.0, vertical: 8.0),
-                    child: Text(
-                      DTexts.loginDescription,
-                      textAlign: TextAlign.center,
-                    ),
-                  )
-                ],
-              ),
+              AuthTitle(title: DTexts.welcome, description: DTexts.loginDescription),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Column(

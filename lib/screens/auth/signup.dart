@@ -1,3 +1,4 @@
+import 'package:famarar/screens/auth/components/authTitle.dart';
 import 'package:famarar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
@@ -23,26 +24,7 @@ class _SignupState extends State<Signup> {
               crossAxisAlignment: CrossAxisAlignment.center,
               spacing: 24.0,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      DTexts.signUpWithEmail,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w800,
-                        fontSize: 20,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 64.0, vertical: 8.0),
-                      child: Text(
-                        DTexts.signUpDescription,
-                        textAlign: TextAlign.center,
-                      ),
-                    )
-                  ],
-                ),
+                AuthTitle(title: DTexts.signUpWithEmail, description: DTexts.signUpDescription),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Column(
