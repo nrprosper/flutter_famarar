@@ -14,7 +14,7 @@ class DTexts {
   static final String signInG = "Sign In with Google";
   static final String signInF = "Sign In with Facebook";
   static final String signInA = "Sign In with Apple";
-  static final String forgotPassword = "Forgot password?";
+  static final String forgotPassword = "Forgot Password?";
 
   //   Signup Screen
   static final String signUpWithEmail = "Sign Up with Email";
@@ -23,6 +23,10 @@ class DTexts {
   static final String agreeSignUp = "By clicking the “Create Account”, you agree to the  Famarar Terms of Service and Privacy Policy";
   static final String confirmPasswordPlaceholder = "Re-enter the password";
   static final String createAcc = "Create an account";
+
+  static final String forgotPasswordDescription = "Please enter your email to send a link verification to reset your password";
+
+  static final String sendEmail = "Send  Email";
 
 
 
