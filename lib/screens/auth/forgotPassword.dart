@@ -1,3 +1,4 @@
+import 'package:famarar/screens/auth/resetPassword.dart';
 import 'package:famarar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +63,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                             height: 56.0,
                             width: double.infinity,
                             child: ElevatedButton(
-                                onPressed: () => {},
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => ResetPassword()));
+                                },
                                 child: Text(DTexts.sendEmail)
                             ),
                           ),
