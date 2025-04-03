@@ -27,6 +27,9 @@ class DTexts {
   static final String forgotPasswordDescription = "Please enter your email to send a link verification to reset your password";
 
   static final String sendEmail = "Send  Email";
+  static final String newPassword = "New Password";
+  static final String newPasswordDes = "Create a strong password for updating the pr*********1.gmail.com";
+  static final resetPassword = "Reset Password";
 
 
 
