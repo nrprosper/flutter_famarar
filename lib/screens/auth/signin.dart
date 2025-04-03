@@ -1,4 +1,5 @@
 import 'package:famarar/components/form_separator.dart';
+import 'package:famarar/screens/auth/forgotPassword.dart';
 import 'package:famarar/screens/auth/signup.dart';
 import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/constants/images.dart';
@@ -75,6 +76,9 @@ class _SigninState extends State<Signin> {
                                   ),
                                 ),
                                 GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassword()));
+                                  },
                                   child: Text(
                                     DTexts.forgotPassword,
                                     style: TextStyle(
