@@ -65,5 +65,39 @@ class DThemes {
     )
   );
 
+  static NavigationBarThemeData navigationBarThemeData = NavigationBarThemeData(
+    indicatorColor: Colors.transparent,
+    iconTheme: WidgetStateProperty.resolveWith<IconThemeData>(
+        (Set<WidgetState> states) {
+          if(states.contains(WidgetState.selected)) {
+            return  IconThemeData(
+              color: DColors.primary,
+              size: 30
+            );
+          }
+          return IconThemeData(
+            color: DColors.gray,
+            size: 30
+          );
+        }
+    ),
+    labelTextStyle: WidgetStateProperty.resolveWith<TextStyle>(
+            (Set<WidgetState> states) {
+          if(states.contains(WidgetState.selected)) {
+            return TextStyle(
+                color: DColors.primary,
+            );
+          }
+          return TextStyle(
+              color: DColors.gray,
+          );
+        }
+    )
+  );
+
+  static CardThemeData cardThemeData = CardThemeData(
+    color: Colors.white
+  );
+
 
 }
