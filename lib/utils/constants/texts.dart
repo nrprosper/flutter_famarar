@@ -31,6 +31,15 @@ class DTexts {
   static final String newPasswordDes = "Create a strong password for updating the pr*********1.gmail.com";
   static final resetPassword = "Reset Password";
 
+//   Dashboard
+  static final String titleDash = "ComFP Admin";
+  static final String titleDashDescription = "Family Planning Support System";
+
+
+  static final String systemOverview = "System Overview";
+
+  static final String programStatistics = "Program Statistics";
+
 
 
 }
