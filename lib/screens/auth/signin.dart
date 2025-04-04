@@ -2,6 +2,7 @@ import 'package:famarar/components/form_separator.dart';
 import 'package:famarar/screens/auth/components/authTitle.dart';
 import 'package:famarar/screens/auth/forgotPassword.dart';
 import 'package:famarar/screens/auth/signup.dart';
+import 'package:famarar/screens/panels/layout.dart';
 import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/constants/images.dart';
 import 'package:famarar/utils/constants/texts.dart';
@@ -21,9 +22,7 @@ class _SigninState extends State<Signin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SizedBox(
-          height: double.infinity,
-          width: double.infinity,
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 24.0,
@@ -76,7 +75,9 @@ class _SigninState extends State<Signin> {
                               height: 56.0,
                               width: double.infinity,
                               child: ElevatedButton(
-                                  onPressed: () => {},
+                                  onPressed: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => Layout()));
+                                  },
                                   child: Text(DTexts.signIn)
                               ),
                             ),

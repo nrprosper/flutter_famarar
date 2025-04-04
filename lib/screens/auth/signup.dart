@@ -17,9 +17,7 @@ class _SignupState extends State<Signup> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SizedBox(
-            height: double.infinity,
-            width: double.infinity,
+          child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               spacing: 24.0,
