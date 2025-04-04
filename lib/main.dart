@@ -17,7 +17,13 @@ class Famarar extends StatelessWidget {
          useMaterial3: true,
          inputDecorationTheme: DThemes.inputDecorationTheme,
          elevatedButtonTheme: DThemes.elevatedButtonThemeData,
-         outlinedButtonTheme: DThemes.outlinedButtonThemeData
+         outlinedButtonTheme: DThemes.outlinedButtonThemeData,
+         navigationBarTheme: DThemes.navigationBarThemeData,
+         cardTheme: DThemes.cardThemeData,
+         appBarTheme: AppBarTheme(
+           backgroundColor: Colors.white
+         ),
+         scaffoldBackgroundColor: Colors.white
 
        ),
        debugShowCheckedModeBanner: false,
