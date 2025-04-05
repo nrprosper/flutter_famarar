@@ -27,7 +27,7 @@ class SystemCard extends StatelessWidget {
         padding: DAppSizes.paddingMedium,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           spacing: DAppSizes.spacingMedium,
           children: [
             Container(

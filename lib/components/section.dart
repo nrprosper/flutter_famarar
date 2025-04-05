@@ -10,20 +10,23 @@ class Section extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      spacing: DAppSizes.spacingMedium,
-      children: [
-        Text(
-          title,
-          style: TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: DAppSizes.fontSizeLarge,
-            color: DColors.grayBlack
+    return SizedBox(
+      width: double.infinity,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        spacing: DAppSizes.spacingMedium,
+        children: [
+          Text(
+            title,
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: DAppSizes.fontSizeLarge,
+                color: DColors.grayBlack
+            ),
           ),
-        ),
-        body
-      ],
+          body
+        ],
+      ),
     );
   }
 }
