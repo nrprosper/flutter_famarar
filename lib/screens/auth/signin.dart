@@ -76,7 +76,7 @@ class _SigninState extends State<Signin> {
                               width: double.infinity,
                               child: ElevatedButton(
                                   onPressed: () {
-                                    Navigator.push(context, MaterialPageRoute(builder: (context) => Layout()));
+                                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Layout()));
                                   },
                                   child: Text(DTexts.signIn)
                               ),
