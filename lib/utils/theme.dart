@@ -52,6 +52,21 @@ class DThemes {
     )
   );
 
+  static ElevatedButtonThemeData greyElevatedButtonThemeData = ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+          elevation: 0,
+          foregroundColor: Colors.black,
+          textStyle: TextStyle(
+              fontSize: 14.0,
+              fontWeight: FontWeight.w700
+          ),
+          backgroundColor: DColors.lightGray,
+          disabledForegroundColor: Colors.grey,
+          disabledBackgroundColor: Colors.grey,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))
+      )
+  );
+
   static OutlinedButtonThemeData outlinedButtonThemeData = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
