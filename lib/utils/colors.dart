@@ -20,6 +20,7 @@ class DColors {
   static final Color pink = Color(0xFF9333EA);
   static final Color pinkBg = Color(0xFFF3E8FF);
   static final Color gray = Color(0xFF6B7280);
+  static final Color lightGray = Color(0xFFE5E7EB);
   static final Color grayBlack = Color(0xFF374151);
   static final Color link = Color(0xFF0028EF);
   static final Color divider = Color(0xFF2F752F);
