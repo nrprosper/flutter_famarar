@@ -1,4 +1,5 @@
  import 'package:famarar/screens/auth/signin.dart';
+import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,11 @@ class Famarar extends StatelessWidget {
          outlinedButtonTheme: DThemes.outlinedButtonThemeData,
          navigationBarTheme: DThemes.navigationBarThemeData,
          cardTheme: DThemes.cardThemeData,
+         searchBarTheme: DThemes.searchBarThemeData,
+         dialogTheme: DThemes.dialogThemeData,
+         dividerTheme: DividerThemeData(
+           color: DColors.lightGray
+         ),
          appBarTheme: AppBarTheme(
            backgroundColor: Colors.white
          ),

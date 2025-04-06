@@ -1,5 +1,6 @@
 
 import 'package:famarar/utils/colors.dart';
+import 'package:famarar/utils/constants/app_sizes.dart';
 import 'package:flutter/material.dart';
 
 class DThemes {
@@ -16,23 +17,54 @@ class DThemes {
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
       border: const OutlineInputBorder().copyWith(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
           borderSide: const BorderSide(width: 2, color: Colors.black12)
       ),
       enabledBorder: const OutlineInputBorder().copyWith(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
           borderSide: const BorderSide(color: Colors.black12)
       ),
       focusedBorder: const OutlineInputBorder().copyWith(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
           borderSide: const BorderSide(color: Colors.black)
       ),
       errorBorder: const OutlineInputBorder().copyWith(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
           borderSide: const BorderSide(color: Colors.red)
       ),
       focusedErrorBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(20.0)),
+          borderRadius: BorderRadius.all(Radius.circular(DAppSizes.radius)),
+          borderSide: BorderSide(color: Colors.orange)
+      )
+  );
+
+  static InputDecorationTheme inputDecorationThemePadded = InputDecorationTheme(
+      errorMaxLines: 3,
+      floatingLabelBehavior: FloatingLabelBehavior.auto,
+      prefixIconColor: DColors.gray,
+      suffixIconColor: DColors.gray,
+      contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 12.0),
+      labelStyle:  const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+      hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+      errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+      border: const OutlineInputBorder().copyWith(
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
+          borderSide: const BorderSide(width: 2, color: Colors.black12)
+      ),
+      enabledBorder: const OutlineInputBorder().copyWith(
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
+          borderSide: const BorderSide(color: Colors.black12)
+      ),
+      focusedBorder: const OutlineInputBorder().copyWith(
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
+          borderSide: const BorderSide(color: Colors.black)
+      ),
+      errorBorder: const OutlineInputBorder().copyWith(
+          borderRadius: BorderRadius.circular(DAppSizes.radius),
+          borderSide: const BorderSide(color: Colors.red)
+      ),
+      focusedErrorBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(DAppSizes.radius)),
           borderSide: BorderSide(color: Colors.orange)
       )
   );
@@ -48,7 +80,7 @@ class DThemes {
       backgroundColor: DColors.primary,
         disabledForegroundColor: Colors.grey,
         disabledBackgroundColor: Colors.grey,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DAppSizes.radius))
     )
   );
 
@@ -63,7 +95,7 @@ class DThemes {
           backgroundColor: DColors.lightGray,
           disabledForegroundColor: Colors.grey,
           disabledBackgroundColor: Colors.grey,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DAppSizes.radius))
       )
   );
 
@@ -76,8 +108,22 @@ class DThemes {
           fontWeight: FontWeight.w700
       ),
       side: BorderSide(color: DColors.grayBlack, width: 2),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DAppSizes.radius)),
     )
+  );
+
+  static OutlinedButtonThemeData outlinedButtonPrimaryThemeData = OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        elevation: 0,
+        foregroundColor: DColors.primary,
+        backgroundColor: Colors.white,
+        textStyle: TextStyle(
+            fontSize: 14.0,
+            // fontWeight: FontWeight.w700
+        ),
+        side: BorderSide(color: DColors.primary, width: 1),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DAppSizes.radius)),
+      )
   );
 
   static NavigationBarThemeData navigationBarThemeData = NavigationBarThemeData(
@@ -112,6 +158,29 @@ class DThemes {
 
   static CardThemeData cardThemeData = CardThemeData(
     color: Colors.white
+  );
+
+  static SearchBarThemeData searchBarThemeData = SearchBarThemeData(
+    backgroundColor: WidgetStateProperty.all(Colors.white),
+    hintStyle: WidgetStateProperty.all(
+      TextStyle(
+        color: DColors.gray
+      )
+    ),
+    shape: WidgetStateProperty.all(
+      RoundedRectangleBorder(borderRadius: BorderRadius.circular(DAppSizes.radius))
+    ),
+    side: WidgetStateProperty.all(
+      BorderSide(
+        color: DColors.lightGray,
+        width: 1.5,
+      ),
+    ),
+    elevation: WidgetStateProperty.all(0)
+  );
+
+  static DialogThemeData dialogThemeData = DialogThemeData(
+    backgroundColor: Colors.white
   );
 
 
