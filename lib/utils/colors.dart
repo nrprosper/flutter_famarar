@@ -4,6 +4,7 @@ class DColors {
 
   DColors._();
 
+  static final Color textDark = Color(0xFF111827);
   static final Color splash = Color(0xFFFF9760);
   static final Color primary = Color(0xFFEA580C);
   static final Color primaryBg = Color(0xFFFFEDD5);

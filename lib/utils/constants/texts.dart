@@ -34,11 +34,21 @@ class DTexts {
 //   Dashboard
   static final String titleDash = "ComFP Admin";
   static final String titleDashDescription = "Family Planning Support System";
+  static final String userMgt = "User Management";
+  static final String userMgtDescription = "Manage user roles and permissions";
 
 
   static final String systemOverview = "System Overview";
 
   static final String programStatistics = "Program Statistics";
+
+  static final String searchPlaceholder = "Search users...";
+  static final String addUserBtn = "Add User";
+  static final bulkInsert = "Bulk User Management";
+  static final bulkInsertDescr = "Import or export user data for bulk operations";
+  static final import = "Import";
+  static final export = "Export";
+
 
 
 
