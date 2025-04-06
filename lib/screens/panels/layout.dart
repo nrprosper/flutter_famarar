@@ -1,4 +1,5 @@
 import 'package:famarar/screens/panels/admin/dashboard.dart';
+import 'package:famarar/screens/panels/admin/user_management.dart';
 import 'package:flutter/material.dart';
 
 class Layout extends StatefulWidget {
@@ -16,6 +17,12 @@ class _LayoutState extends State<Layout> {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.white,
+        selectedIndex: currentPageIndex,
+        onDestinationSelected: (int idx) {
+          setState(() {
+            currentPageIndex = idx;
+          });
+        },
         destinations: <NavigationDestination>[
           NavigationDestination(icon: Icon(Icons.home_outlined), label: 'Home'),
           NavigationDestination(icon: Icon(Icons.group_outlined), label: 'Users'),
@@ -25,7 +32,8 @@ class _LayoutState extends State<Layout> {
         ]
       ),
       body: <Widget> [
-        const Dashboard()
+        const Dashboard(),
+        const UserManagement()
       ] [currentPageIndex],
     );
   }
