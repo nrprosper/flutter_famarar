@@ -1,5 +1,6 @@
 import 'package:famarar/screens/auth/components/authTitle.dart';
 import 'package:famarar/utils/constants/texts.dart';
+import 'package:famarar/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
@@ -45,11 +46,15 @@ class _SignupState extends State<Signup> {
                                 ),
                               ),
                               const SizedBox(height: 20),
-                              IntlPhoneField(
-                                initialCountryCode: initialCountry,
-                                decoration: InputDecoration(
-                                  hintText: '791154300'
-                                ),
+                              Theme(data: Theme.of(context).copyWith(
+                                inputDecorationTheme: DThemes.inputDecorationThemePadded,
+                                  ),
+                                  child: IntlPhoneField(
+                                    initialCountryCode: initialCountry,
+                                    decoration: InputDecoration(
+                                        hintText: '791154300'
+                                    ),
+                                  )
                               ),
                               const SizedBox(height: 20),
                               TextFormField(

@@ -1,10 +1,10 @@
 import 'package:famarar/components/activity_tile.dart';
+import 'package:famarar/components/appbar.dart';
 import 'package:famarar/components/section.dart';
 import 'package:famarar/components/system_card.dart';
 import 'package:famarar/data/activity_data.dart';
 import 'package:famarar/data/system_card_data.dart';
 import 'package:famarar/screens/panels/admin/features/statistics.dart';
-import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/constants/app_sizes.dart';
 import 'package:famarar/utils/constants/texts.dart';
 import 'package:famarar/utils/theme.dart';
@@ -16,28 +16,7 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              DTexts.titleDash,
-              style: TextStyle(
-                color: DColors.grayBlack,
-                fontWeight: FontWeight.w800
-              ),
-            ),
-            Text(
-              DTexts.titleDashDescription,
-              style: TextStyle(
-                fontSize: 14,
-                color: DColors.gray,
-                fontWeight: FontWeight.w400
-              ),
-            )
-          ],
-        ),
-      ),
+      appBar: DAppbar(title: DTexts.titleDash, description: DTexts.titleDashDescription),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: DAppSizes.spacingLarge, vertical: DAppSizes.spacingMedium),
