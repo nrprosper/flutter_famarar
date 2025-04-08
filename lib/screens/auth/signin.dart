@@ -4,6 +4,7 @@ import 'package:famarar/screens/auth/forgotPassword.dart';
 import 'package:famarar/screens/auth/signup.dart';
 import 'package:famarar/screens/panels/layout.dart';
 import 'package:famarar/utils/colors.dart';
+import 'package:famarar/utils/constants/app_sizes.dart';
 import 'package:famarar/utils/constants/images.dart';
 import 'package:famarar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
@@ -72,7 +73,7 @@ class _SigninState extends State<Signin> {
                             ),
                             const SizedBox(height: 20),
                             SizedBox(
-                              height: 56.0,
+                              height: DAppSizes.buttonHeight,
                               width: double.infinity,
                               child: ElevatedButton(
                                   onPressed: () {
@@ -89,7 +90,7 @@ class _SigninState extends State<Signin> {
                       spacing: 24.0,
                       children: [
                         SizedBox(
-                          height: 56.0,
+                          height: DAppSizes.buttonHeight,
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => {},
@@ -108,7 +109,7 @@ class _SigninState extends State<Signin> {
                           ),
                         ),
                         SizedBox(
-                          height: 56.0,
+                          height: DAppSizes.buttonHeight,
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => {},
@@ -127,7 +128,7 @@ class _SigninState extends State<Signin> {
                           ),
                         ),
                         SizedBox(
-                          height: 56.0,
+                          height: DAppSizes.buttonHeight,
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => {},

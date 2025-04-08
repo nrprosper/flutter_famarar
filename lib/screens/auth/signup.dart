@@ -1,4 +1,5 @@
 import 'package:famarar/screens/auth/components/authTitle.dart';
+import 'package:famarar/utils/constants/app_sizes.dart';
 import 'package:famarar/utils/constants/texts.dart';
 import 'package:famarar/utils/theme.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,7 @@ class _SignupState extends State<Signup> {
                               ),
                               const SizedBox(height: 20),
                               SizedBox(
-                                height: 56.0,
+                                height: DAppSizes.buttonHeight,
                                 width: double.infinity,
                                 child: ElevatedButton(
                                     onPressed: () => {},
