@@ -1,4 +1,5 @@
 import 'package:famarar/screens/panels/admin/dashboard.dart';
+import 'package:famarar/screens/panels/admin/security_screen.dart';
 import 'package:famarar/screens/panels/admin/user_management.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,8 @@ class _LayoutState extends State<Layout> {
       ),
       body: <Widget> [
         const Dashboard(),
-        const UserManagement()
+        const UserManagement(),
+        const SecurityScreen()
       ] [currentPageIndex],
     );
   }

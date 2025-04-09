@@ -29,12 +29,15 @@ class UserManagement extends StatelessWidget {
                 spacing: DAppSizes.spacingMedium,
                 children: [
                   Expanded(
-                    child: SearchBar(
-                      leading: Icon(
-                        Icons.search,
-                        color: DColors.gray,
+                    child: SizedBox(
+                      height: DAppSizes.buttonHeight,
+                      child: SearchBar(
+                        leading: Icon(
+                          Icons.search,
+                          color: DColors.gray,
+                        ),
+                        hintText: DTexts.searchPlaceholder,
                       ),
-                      hintText: DTexts.searchPlaceholder,
                     ),
                   ),
                   SizedBox(
