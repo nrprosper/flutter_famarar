@@ -19,7 +19,7 @@ class Dashboard extends StatelessWidget {
       appBar: DAppbar(title: DTexts.titleDash, description: DTexts.titleDashDescription),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: DAppSizes.spacingLarge, vertical: DAppSizes.spacingMedium),
+          padding: const EdgeInsets.symmetric(horizontal: DAppSizes.spacingMedium, vertical: DAppSizes.spacingMedium),
           child: Column(
             spacing: DAppSizes.spacingLarge,
             crossAxisAlignment: CrossAxisAlignment.start,
