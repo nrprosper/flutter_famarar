@@ -4,7 +4,7 @@ class DAppSizes {
 
   DAppSizes._();
 
-  static const double buttonHeight = 56.0;
+  static const double buttonHeight = 44.0;
   static const double radius = 12.0;
   static const double inputRadius = 20.0;
 

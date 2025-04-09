@@ -49,6 +49,17 @@ class DTexts {
   static final import = "Import";
   static final export = "Export";
 
+  static final securityTitle = "Data Security";
+  static final securityTitleDescr = "Manage security and compliance";
+  static final recentSecAct = 'Recent Security Activities';
+  static final multipleAtt = 'Multiple login attempts';
+  static final multipleAttDesc = '3 failed login attempts from IP 192.168.1.45';
+  static final multipleAttTim = "Today, 10:23 AM";
+
+  static final dataAccess = 'Unusual data access pattern';
+  static final dataAccessDesc = 'User ID 342 accessed sensitive data outside ';
+  static final dataAccessTime = 'Yesterday, 11:52 PM';
+
 
 
 
