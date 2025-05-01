@@ -1,3 +1,4 @@
+import 'package:famarar/components/system_card.dart';
 import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/status.dart';
 import 'package:flutter/material.dart';
@@ -32,5 +33,33 @@ IconData getIcon(Status status) {
       return Icons.error_outline_outlined;
     case Status.bad:
       return Icons.error_outline_outlined;
+  }
+}
+
+
+Color getBgColor(SystemCardVariant variant) {
+  switch (variant) {
+    case SystemCardVariant.primary:
+      return DColors.primaryBg;
+    case SystemCardVariant.warning:
+      return DColors.warningBg;
+    case SystemCardVariant.pink:
+      return DColors.pinkBg;
+    case SystemCardVariant.success:
+      return DColors.successBg;
+  }
+}
+
+
+Color getIconCol(SystemCardVariant variant) {
+  switch (variant) {
+    case SystemCardVariant.primary:
+      return DColors.primary;
+    case SystemCardVariant.warning:
+      return DColors.warning;
+    case SystemCardVariant.pink:
+      return DColors.pink;
+    case SystemCardVariant.success:
+      return DColors.success;
   }
 }

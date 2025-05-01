@@ -1,5 +1,5 @@
 import 'package:famarar/components/appbar.dart';
-import 'package:famarar/data/models/user.dart';
+import 'package:famarar/data/models.dart';
 import 'package:famarar/screens/panels/admin/features/users_table.dart';
 import 'package:famarar/utils/colors.dart';
 import 'package:famarar/utils/constants/app_sizes.dart';

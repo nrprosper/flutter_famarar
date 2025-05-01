@@ -14,6 +14,7 @@ class DAppSizes {
   //////////////
   static const double spacingExtraSmall = 4.0;
   static const double spacingSmall = 8.0;
+  static const double spacingCards = 13.0;
   static const double spacingMedium = 16.0;
   static const double spacingCommon = 24.0;
   static const double spacingLarge = 24.0;
@@ -25,6 +26,7 @@ class DAppSizes {
   // For many cases you might use EdgeInsets constants.
   static const EdgeInsets paddingExtraSmall = EdgeInsets.all(spacingExtraSmall);
   static const EdgeInsets paddingSmall = EdgeInsets.all(spacingSmall);
+  static const EdgeInsets paddingCard = EdgeInsets.all(spacingCards);
   static const EdgeInsets paddingMedium = EdgeInsets.all(spacingMedium);
   static const EdgeInsets paddingLarge = EdgeInsets.all(spacingLarge);
   static const EdgeInsets paddingExtraLarge = EdgeInsets.all(spacingExtraLarge);

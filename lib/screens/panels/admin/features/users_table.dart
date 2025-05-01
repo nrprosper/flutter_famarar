@@ -1,4 +1,4 @@
-import 'package:famarar/data/models/user.dart';
+import 'package:famarar/data/models.dart';
 import 'package:famarar/utils/colors.dart';
 import 'package:flutter/material.dart';
 

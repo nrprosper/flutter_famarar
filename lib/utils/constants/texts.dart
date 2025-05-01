@@ -60,7 +60,15 @@ class DTexts {
   static final dataAccessDesc = 'User ID 342 accessed sensitive data outside ';
   static final dataAccessTime = 'Yesterday, 11:52 PM';
 
+  static final systemUpdates = "System Updates";
+  static final systemUpdatesDesc = "Manage system maintenance and updates";
 
+
+  static final analyticsTitle = "Analytics & Reports";
+  static final analyticsDescription = "Program evaluation and insights";
+  static final metricsTitle = "Key Metrics";
+  static final reportsTitle = "Available Reports";
+  static final generateReport = "Generate Custom Report";
 
 
 }

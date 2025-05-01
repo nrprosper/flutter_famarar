@@ -1,4 +1,4 @@
-import 'package:famarar/data/models/user.dart';
+import 'package:famarar/data/models.dart';
 
 final List<User> demoUsers = [
   User(
